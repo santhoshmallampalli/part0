@@ -1,0 +1,21 @@
+
+                                                         code for sequential diagram for new creation of note p-0-4
+
+
+title sequential diagram for new note creation
+note over browser : user fills the data in the text fields and then press submit button
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+server->browser: HTTP status code 200 
+note over server: this is a url server asks the browser to do a new http get request
+note over browser:the browser reloads the notes page
+browser-->server: HTML-koodi
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+browser-->server: main.css
+server->browser: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+browser-->server: main.js
+
+
+
+
+server->browser: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+browser-->server: [{ content: "HTML on helppoa", date: "2019-01-01" }, ...]
